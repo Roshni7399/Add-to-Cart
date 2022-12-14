@@ -1,0 +1,16 @@
+<nav class="navbar navbar-dark bg-secondary shadow-sm">
+  <div class="navbar-brand align-item-center d-flex">
+      <span style="font-size: 20px;" class="fa-solid fa-truck-fast"></span>
+      <strong class="app-name">Add-to-Cart</strong>
+      <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search Products" [(ngModel)]="searchTerm" (keyup)="search($event)"/>
+      </div>
+      <span class="fa fa-search search-icon" aria-hidden="true"></span>
+  </div>
+
+  <button routerLink="cart"  class="btn btn-secondary" style="font-size: 30px; margin-right: 40px;">
+    <i class="fa fa-shopping-cart"></i>
+    <div class="badge bg-danger" style="font-size: 10px;">{{totalItem}}</div>
+  </button>
+ 
+  </nav>
